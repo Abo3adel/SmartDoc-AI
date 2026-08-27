@@ -4,7 +4,7 @@
 A robust full-stack document analysis system built with **FastAPI** (Backend) and **Gradio** (Frontend), implementing Clean Architecture principles and Smart API Orchestration.
 
 
-![App Screenshot](screen.png)
+![App Screenshot](screen1.png)
 
 ## ✨ Features
 * **Modular Clean Architecture**: Separation of concerns (`api`, `services`, `schemas`).
