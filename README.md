@@ -11,7 +11,8 @@ A robust full-stack document analysis system built with **FastAPI** (Backend) an
 * **Smart UI Orchestration**: The frontend gracefully handles missing data without forcing the user into rigid flows.
 * **Dynamic RTL/LTR UI**: Automatic language detection to adjust text alignment and formatting for Arabic and English outputs.
 * **Structured LLM Outputs**: Utilizing Pydantic models for strict JSON validation and robust error handling.
-
+* **Multi-Format Document Support**: Seamlessly processes and extracts text from diverse file types (`.txt`, `.pdf`, `.docx`) using an adapter pattern before routing to the LLM.
+  
 ## 📂 Project Structure
 
 ```text
@@ -50,6 +51,10 @@ This project leverages a modern, highly efficient Python ecosystem, organized by
 
 **Data Validation & Serialization**
 * **Pydantic:** Guarantees data integrity and forces strict JSON schema validation for all LLM outputs and API responses.
+
+**Document Processing & Extraction**
+* **PyPDF2**: Efficient parsing and text extraction from PDF documents.
+* **python-docx**: Parsing and extracting structured text from Microsoft Word documents.
 
 **Core Utilities & Environment Management**
 * **python-dotenv:** Secure management of environment variables and API keys.
